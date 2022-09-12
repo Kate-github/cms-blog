@@ -1,0 +1,43 @@
+<main class="landing-content form-signin w-100 m-auto">
+    <h1>Sign up</h1>
+    <div class="landing-text tm-15px">
+        <form action="" method="POST">
+        <div>
+            <label for="userName">First Name: </label>
+            <br>
+            <input type="text" name="firstName" id="firstName" required>
+        </div>
+        <div>
+            <label for="userName">Last Name: </label>
+            <br>
+            <input type="text" name="lastName" id="lastName" required>
+        </div>
+        <div>
+            <label for="userName">Email: </label>
+            <br>
+            <input type="email" name="email" id="email" required>
+        </div>
+        <div>
+            <label for="password">Password: </label>
+            <br>
+            <input type="password" name="password" id="password" required>
+        </div>
+        <div>
+            <label for="password">Confirm Password: </label>
+            <br>
+            <input type="password" name="confirmPassword" id="confirmPassword" required>
+        </div>
+        {{#if error}}
+        <span style="color:red">{{error}}</span>
+        {{/if}}
+        <div>
+            <input type="submit" value="Sign Up"  class="button-submit">
+        </div>
+    </form>
+    <hr class="tm-15px">
+    <div>
+        <p>Already have an account? What are you waiting for!? <a href="/login">Log in</a>.</p>
+    </div>
+    </div>
+    
+</main>

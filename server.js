@@ -10,7 +10,6 @@ const hbs = exphbs.create({ helpers })
 const session = require('express-session')
 
 const SequelizeStore = require('connect-session-sequelize')(session.Store)
-
 const sess = {
     secret: process.env.SESSION_SECRET,
     cookie: {},
@@ -22,7 +21,7 @@ const sess = {
 }
 
 const app = express()
-const PORT = process.env.PORT || 3001
+const PORT = process.env.PORT || 3000
 
 app.engine('handlebars', hbs.engine)
 app.set('view engine','handlebars')

@@ -1,0 +1,24 @@
+<main class="landing-content form-signin w-100 m-auto">
+    <h1>Blog Post</h1>
+    <div class="landing-text tm-15px">
+        <form action="" method="POST">
+            <input type="hidden" name="id" value="{{post.id}}" />
+            <input type="hidden" name="createDate" value="{{post.createDate}}" />
+            <div>
+                <label for="userName">Title: </label>
+                <br>
+                <input type="text" name="title" id="title" required style="width:700px" value="{{post.title}}">
+            </div>
+            <div>
+                <label for="userName">Content: </label>
+                <br>
+                <textarea style="width:700px;height:150px;" type="text" name="content" id="content"
+                    required>{{post.content}}</textarea>
+            </div>
+            <div>
+                <input type="submit" value="Save" class="button-submit">
+            </div>
+        </form>
+    </div>
+
+</main>

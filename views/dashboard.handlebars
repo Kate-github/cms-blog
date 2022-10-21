@@ -1,0 +1,17 @@
+<main class="landing-content">
+    <h1>Dashboard</h1>
+
+    <ul>
+        {{#each posts as |post|}}
+        <li>
+            <div>
+                <h5>
+                    <a href="/posts/{{post.id}}">{{post.title}} - {{post.createDateString}}</a>
+                </h5>
+            </div>
+        </li>
+        {{/each}}
+    </ul>
+    <hr/>
+    <a href="/posts">Create new Post</a>
+</main>
